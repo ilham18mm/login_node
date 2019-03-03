@@ -1,2 +1,2 @@
 # login_node
-mysql nodejs
+mysql nodejs sample

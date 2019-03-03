@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>admin page</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+    html{
+      padding: 50px;
+    }
+  </style>
+</head>
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h2>my profile</h2>
+        <a href="/logout" class="btn btn-danger btn-sm ">logout</a>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well">
+            <h3> <span class="fa fa-user"></span> Welcome <%= user.username %></h3>
+
+            <p>
+              <strong>id</strong><%= user.id %>
+              <strong>username</strong><%= user.username %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
